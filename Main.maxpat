@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -455.0, -1356.0, 1602.0, 1116.0 ],
+		"rect" : [ -695.0, -1342.0, 2246.0, 1187.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,48 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontsize" : 30.0,
+					"id" : "obj-26",
+					"linecount" : 4,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 432.0, 187.33333432674408, 233.333333611488342, 174.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 4,
+					"presentation_rect" : [ 432.0, 188.499997138977051, 224.0, 174.0 ],
+					"text" : "Currently Fixed length chunk sizes, 1/2 Bar\n\n"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 13.0,
+					"id" : "obj-25",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 462.0, 326.0, 121.0, 23.0 ],
+					"text" : "metro 2n @active 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 525.0, 485.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-24",
 					"maxclass" : "button",
@@ -255,7 +297,7 @@
 					"numoutlets" : 2,
 					"offset" : [ -191.666666507720947, -343.333332419395447 ],
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 331.226198315620422, 720.99999737739563, 248.5, 372.666670680046082 ],
+					"patching_rect" : [ 329.226198315620422, 720.99999737739563, 248.5, 372.666670680046082 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 334.27551020894731, 612.0, 256.749999999999943, 359.333336472511292 ],
 					"varname" : "Chunk[2]",
@@ -292,10 +334,10 @@
 					"basictuning" : 440,
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "cello-f2.aif",
-								"filename" : "cello-f2.aif",
+								"absolutepath" : "drumLoop.aif",
+								"filename" : "drumLoop.aif",
 								"filekind" : "audiofile",
-								"id" : "u299004689",
+								"id" : "u504002916",
 								"loop" : 1,
 								"content_state" : 								{
 									"loop" : 1
@@ -316,7 +358,7 @@
 					"originaltempo" : 120.0,
 					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 56.797621190547943, 495.0, 150.0, 30.0 ],
+					"patching_rect" : [ 266.238105475902557, 540.0, 150.0, 30.0 ],
 					"pitchcorrection" : 0,
 					"presentation" : 1,
 					"presentation_rect" : [ 86.5, 319.0, 150.0, 30.0 ],
@@ -790,7 +832,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1048.5, 503.499997138977051, 233.333333611488342, 74.0 ],
+					"patching_rect" : [ 1218.0, 478.499997138977051, 233.333333611488342, 74.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 334.275510208947253, 334.5, 224.0, 74.0 ],
 					"text" : "Current Chunk\n"
@@ -847,54 +889,6 @@
 					"numinlets" : 2,
 					"numoutlets" : 0,
 					"patching_rect" : [ 66.380953729152679, 1230.166669726371765, 45.0, 45.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-17",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 648.0, 371.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-15",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 588.0, 206.0, 87.0, 22.0 ],
-					"text" : "timepoint 2.1.0"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-14",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 436.0, 371.0, 24.0, 24.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-4",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 431.0, 206.0, 67.0, 22.0 ],
-					"text" : "timepoint 0"
 				}
 
 			}
@@ -1005,20 +999,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-14", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-17", 0 ],
-					"source" : [ "obj-15", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-54", 0 ],
 					"source" : [ "obj-16", 0 ]
 				}
@@ -1026,15 +1006,22 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-1", 0 ],
-					"source" : [ "obj-17", 0 ]
+					"destination" : [ "obj-10", 0 ],
+					"source" : [ "obj-18", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
-					"source" : [ "obj-18", 0 ]
+					"destination" : [ "obj-1", 0 ],
+					"source" : [ "obj-23", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-23", 0 ],
+					"source" : [ "obj-25", 0 ]
 				}
 
 			}
@@ -1056,13 +1043,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-49", 0 ],
 					"source" : [ "obj-39", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-14", 0 ],
-					"source" : [ "obj-4", 0 ]
 				}
 
 			}
@@ -1199,7 +1179,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-100", 0 ],
-					"order" : 4,
+					"order" : 5,
 					"source" : [ "obj-66", 0 ]
 				}
 
@@ -1207,7 +1187,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-101", 1 ],
-					"order" : 2,
+					"order" : 4,
 					"source" : [ "obj-66", 1 ]
 				}
 
@@ -1215,7 +1195,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-101", 0 ],
-					"order" : 3,
+					"order" : 6,
 					"source" : [ "obj-66", 0 ]
 				}
 
@@ -1223,7 +1203,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-104", 1 ],
-					"order" : 1,
+					"order" : 5,
 					"source" : [ "obj-66", 1 ]
 				}
 
@@ -1231,7 +1211,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-104", 0 ],
-					"order" : 2,
+					"order" : 7,
 					"source" : [ "obj-66", 0 ]
 				}
 
@@ -1239,22 +1219,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-107", 1 ],
-					"order" : 0,
-					"source" : [ "obj-66", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-107", 0 ],
-					"order" : 1,
-					"source" : [ "obj-66", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-82", 1 ],
 					"order" : 6,
 					"source" : [ "obj-66", 1 ]
 				}
@@ -1262,8 +1226,24 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-82", 0 ],
+					"destination" : [ "obj-107", 0 ],
 					"order" : 8,
+					"source" : [ "obj-66", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-82", 1 ],
+					"order" : 0,
+					"source" : [ "obj-66", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-82", 0 ],
+					"order" : 1,
 					"source" : [ "obj-66", 0 ]
 				}
 
@@ -1279,7 +1259,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-94", 0 ],
-					"order" : 7,
+					"order" : 2,
 					"source" : [ "obj-66", 0 ]
 				}
 
@@ -1287,7 +1267,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-96", 1 ],
-					"order" : 5,
+					"order" : 1,
 					"source" : [ "obj-66", 1 ]
 				}
 
@@ -1295,7 +1275,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-96", 0 ],
-					"order" : 6,
+					"order" : 3,
 					"source" : [ "obj-66", 0 ]
 				}
 
@@ -1303,7 +1283,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-98", 1 ],
-					"order" : 4,
+					"order" : 2,
 					"source" : [ "obj-66", 1 ]
 				}
 
@@ -1311,7 +1291,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-98", 0 ],
-					"order" : 5,
+					"order" : 4,
 					"source" : [ "obj-66", 0 ]
 				}
 
@@ -6051,7 +6031,7 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "cello-f2.aif",
+				"name" : "drumLoop.aif",
 				"bootpath" : "C74:/media/msp",
 				"type" : "AIFF",
 				"implicit" : 1
