@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1360.0, -1249.0, 793.0, 716.0 ],
+		"rect" : [ 1360.0, -1249.0, 1079.0, 1004.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -105,8 +105,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 917.0, 568.5, 56.0, 22.0 ],
-					"text" : "metro 10"
+					"patching_rect" : [ 917.0, 568.5, 53.0, 22.0 ],
+					"text" : "metro 5."
 				}
 
 			}
