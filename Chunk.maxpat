@@ -130,7 +130,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 381.0, 388.0, 50.0, 22.0 ]
+					"patching_rect" : [ 196.0, 351.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -240,7 +240,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "float" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 144.0, 360.0, 221.0, 69.0 ],
+					"patching_rect" : [ 660.0, 425.0, 221.0, 69.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 450.0, 291.0, 221.0, 69.0 ],
 					"saved_attribute_attributes" : 					{
@@ -329,7 +329,7 @@
 					"numoutlets" : 2,
 					"offset" : [ -56.0, -458.0 ],
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 202.0, 593.0, 255.0, 32.0 ],
+					"patching_rect" : [ 191.0, 471.0, 255.0, 32.0 ],
 					"varname" : "fxSlot[3]",
 					"viewvisibility" : 1
 				}
@@ -351,7 +351,7 @@
 					"numoutlets" : 2,
 					"offset" : [ -56.0, -458.0 ],
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 196.0, 542.333333333333371, 255.0, 32.0 ],
+					"patching_rect" : [ 191.0, 439.0, 255.0, 32.0 ],
 					"varname" : "fxSlot[2]",
 					"viewvisibility" : 1
 				}
@@ -373,7 +373,7 @@
 					"numoutlets" : 2,
 					"offset" : [ -56.0, -458.0 ],
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 196.0, 494.666666666666686, 255.0, 32.0 ],
+					"patching_rect" : [ 191.0, 407.0, 255.0, 32.0 ],
 					"varname" : "fxSlot[1]",
 					"viewvisibility" : 1
 				}
@@ -395,7 +395,7 @@
 					"numoutlets" : 2,
 					"offset" : [ -56.0, -458.0 ],
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 196.0, 447.0, 255.0, 32.0 ],
+					"patching_rect" : [ 191.0, 375.0, 255.0, 32.0 ],
 					"varname" : "fxSlot",
 					"viewvisibility" : 1
 				}
