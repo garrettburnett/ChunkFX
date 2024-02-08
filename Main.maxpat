@@ -41,6 +41,20 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"fontsize" : 30.0,
+					"id" : "obj-27",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 525.0, 67.0, 233.333333611488342, 74.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 526.0, 68.499997138977051, 224.0, 74.0 ],
+					"text" : "START\n"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontsize" : 30.0,
 					"id" : "obj-26",
 					"linecount" : 4,
 					"maxclass" : "comment",
@@ -461,22 +475,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bubble" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 13.0,
-					"id" : "obj-38",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 977.0, 58.5, 187.0, 25.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 977.0, 58.5, 187.0, 25.0 ],
-					"text" : "start and stop the transport"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-39",
 					"maxclass" : "button",
 					"numinlets" : 1,
@@ -497,7 +495,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 957.0, 61.0, 20.0, 20.0 ],
+					"patching_rect" : [ 781.0, 58.5, 119.0, 119.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 957.0, 61.0, 20.0, 20.0 ]
 				}
@@ -627,23 +625,6 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 1029.5, 229.0, 37.0, 21.0 ],
 					"text" : "bars",
-					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"fontname" : "Arial",
-					"fontsize" : 13.0,
-					"id" : "obj-7",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 996.5, 117.0, 178.0, 25.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 996.5, 117.0, 178.0, 25.0 ],
-					"text" : "report current values",
 					"textcolor" : [ 0.501961, 0.501961, 0.501961, 1.0 ]
 				}
 
