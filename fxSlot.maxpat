@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 243.0, 100.0, 1044.0, 781.0 ],
+		"rect" : [ 117.0, 100.0, 859.0, 781.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -26,7 +26,7 @@
 		"toptoolbarpinned" : 0,
 		"righttoolbarpinned" : 0,
 		"bottomtoolbarpinned" : 0,
-		"toolbars_unpinned_last_save" : 0,
+		"toolbars_unpinned_last_save" : 4,
 		"tallnewobj" : 0,
 		"boxanimatetime" : 200,
 		"enablehscroll" : 1,
@@ -123,17 +123,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-74",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1380.0, 294.0, 150.0, 20.0 ],
-					"text" : "NOT STEREO :("
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bgmode" : 0,
 					"border" : 0,
 					"clickthrough" : 0,
@@ -144,12 +133,12 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "bp.LPF.maxpat",
-					"numinlets" : 5,
-					"numoutlets" : 1,
+					"name" : "biquadFilter.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 1351.0, 323.0, 304.0, 116.0 ],
+					"outlettype" : [ "signal", "signal" ],
+					"patching_rect" : [ 1302.0, 317.0, 633.0, 224.0 ],
 					"varname" : "bp.LPF",
 					"viewvisibility" : 1
 				}
@@ -184,7 +173,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 1057.0, 323.0, 251.0, 163.5 ],
+					"patching_rect" : [ 1032.0, 323.0, 251.0, 163.5 ],
 					"varname" : "bp.Sync Delay",
 					"viewvisibility" : 1
 				}
@@ -263,7 +252,7 @@
 					"presentation_rect" : [ 50.0, 401.0, 100.0, 27.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "BYPASS", "REVERB", "CHORUS", "DELAY", "LADDER" ],
+							"parameter_enum" : [ "BYPASS", "REVERB", "CHORUS", "DELAY", "FILTER" ],
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "live.menu",
@@ -430,7 +419,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-57", 1 ],
 					"midpoints" : [ 137.5, 514.5, 477.800000000000011, 514.5 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-47", 1 ]
 				}
 
@@ -438,7 +427,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-58", 1 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-47", 1 ]
 				}
 
@@ -446,7 +435,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-58", 0 ],
-					"order" : 4,
+					"order" : 5,
 					"source" : [ "obj-47", 1 ]
 				}
 
@@ -462,7 +451,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-60", 1 ],
-					"order" : 2,
+					"order" : 3,
 					"source" : [ "obj-47", 1 ]
 				}
 
@@ -477,8 +466,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-72", 1 ],
+					"order" : 0,
+					"source" : [ "obj-47", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-72", 0 ],
-					"order" : 3,
+					"order" : 4,
 					"source" : [ "obj-47", 1 ]
 				}
 
@@ -524,7 +521,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-55", 4 ],
-					"midpoints" : [ 1066.5, 590.5, 423.699999999999989, 590.5 ],
+					"midpoints" : [ 1041.5, 590.5, 423.699999999999989, 590.5 ],
 					"source" : [ "obj-60", 0 ]
 				}
 
@@ -532,7 +529,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-57", 4 ],
-					"midpoints" : [ 1298.5, 590.5, 513.200000000000045, 590.5 ],
+					"midpoints" : [ 1273.5, 590.5, 513.200000000000045, 590.5 ],
 					"source" : [ "obj-60", 1 ]
 				}
 
@@ -547,8 +544,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-55", 5 ],
-					"midpoints" : [ 1360.5, 590.5, 435.5, 590.5 ],
-					"order" : 1,
+					"midpoints" : [ 1311.5, 590.5, 435.5, 590.5 ],
 					"source" : [ "obj-72", 0 ]
 				}
 
@@ -556,9 +552,8 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-57", 5 ],
-					"midpoints" : [ 1360.5, 590.5, 525.0, 590.5 ],
-					"order" : 0,
-					"source" : [ "obj-72", 0 ]
+					"midpoints" : [ 1925.5, 597.5, 525.0, 597.5 ],
+					"source" : [ "obj-72", 1 ]
 				}
 
 			}
@@ -585,15 +580,6 @@
 			"obj-2::obj-26" : [ "Decay", "Decay", 0 ],
 			"obj-2::obj-50" : [ "bypass", "bypass", 0 ],
 			"obj-2::obj-55" : [ "Mix", "Mix", 0 ],
-			"obj-72::obj-20" : [ "Freq", "Freq", 0 ],
-			"obj-72::obj-22" : [ "TimeMode", "TimeMode", 1 ],
-			"obj-72::obj-23" : [ "Offset", "Offset", 0 ],
-			"obj-72::obj-51" : [ "CV2", "CV2", 0 ],
-			"obj-72::obj-54" : [ "CV1", "CV1", 0 ],
-			"obj-72::obj-55" : [ "power", "power", 0 ],
-			"obj-72::obj-63" : [ "CV3", "CV3", 0 ],
-			"obj-72::obj-68" : [ "Res", "Res", 0 ],
-			"obj-72::obj-95" : [ "ResCV", "CV", 0 ],
 			"parameterbanks" : 			{
 				"0" : 				{
 					"index" : 0,
@@ -613,8 +599,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "bp.LPF.maxpat",
-				"bootpath" : "C74:/packages/BEAP/clippings/BEAP/Filter",
+				"name" : "biquadFilter.maxpat",
+				"bootpath" : "~/Documents/GitHub/ChunkFX/fxModules",
+				"patcherrelativepath" : "./fxModules",
 				"type" : "JSON",
 				"implicit" : 1
 			}
