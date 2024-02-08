@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -541.0, -1283.0, 1767.0, 1116.0 ],
+		"rect" : [ -455.0, -1356.0, 1602.0, 1116.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,30 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-24",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1704.0, 543.0, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1464.0, 561.499998807907104, 152.0, 22.0 ],
+					"text" : "value currentChunkIndex 0"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontsize" : 30.0,
 					"id" : "obj-6",
 					"maxclass" : "comment",
@@ -66,21 +90,7 @@
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 48.0,
-					"id" : "obj-105",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1974.178571462631226, 668.249999463558197, 72.0, 60.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 1874.928571462630771, 544.0, 72.0, 60.0 ],
-					"text" : "8"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"args" : [ 1 ],
+					"args" : [ 8 ],
 					"bgmode" : 2,
 					"border" : 1,
 					"clickthrough" : 1,
@@ -92,9 +102,9 @@
 					"maxclass" : "bpatcher",
 					"name" : "Chunk.maxpat",
 					"numinlets" : 2,
-					"numoutlets" : 3,
+					"numoutlets" : 2,
 					"offset" : [ -192.99999988079071, -344.66666579246521 ],
-					"outlettype" : [ "signal", "signal", "" ],
+					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 1967.833340883255005, 728.535710275173187, 248.5, 372.666670680046082 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1874.928571462630998, 612.0, 256.750000000000227, 359.333336472511292 ],
@@ -105,21 +115,7 @@
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 48.0,
-					"id" : "obj-103",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1711.178571462631226, 662.249999463558197, 72.0, 60.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 1618.153061253683518, 544.0, 72.0, 60.0 ],
-					"text" : "7"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"args" : [ 1 ],
+					"args" : [ 7 ],
 					"bgmode" : 2,
 					"border" : 1,
 					"clickthrough" : 1,
@@ -131,9 +127,9 @@
 					"maxclass" : "bpatcher",
 					"name" : "Chunk.maxpat",
 					"numinlets" : 2,
-					"numoutlets" : 3,
+					"numoutlets" : 2,
 					"offset" : [ -192.99999988079071, -343.333332419395447 ],
-					"outlettype" : [ "signal", "signal", "" ],
+					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 1704.833340883255005, 722.535710275173187, 248.5, 372.666670680046082 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1618.153061253683745, 612.0, 256.75, 359.333336472511292 ],
@@ -144,21 +140,7 @@
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 48.0,
-					"id" : "obj-102",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1450.178571462631226, 660.71428656578064, 72.0, 60.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 1361.377551044736265, 544.0, 72.0, 60.0 ],
-					"text" : "6"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"args" : [ 1 ],
+					"args" : [ 6 ],
 					"bgmode" : 2,
 					"border" : 1,
 					"clickthrough" : 1,
@@ -170,9 +152,9 @@
 					"maxclass" : "bpatcher",
 					"name" : "Chunk.maxpat",
 					"numinlets" : 2,
-					"numoutlets" : 3,
+					"numoutlets" : 2,
 					"offset" : [ -194.333333253860474, -344.66666579246521 ],
-					"outlettype" : [ "signal", "signal", "" ],
+					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 1443.833340883255005, 720.99999737739563, 248.5, 372.666670680046082 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1361.377551044736492, 612.0, 256.75, 359.333336472511292 ],
@@ -183,21 +165,7 @@
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 48.0,
-					"id" : "obj-99",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1179.75, 660.71428656578064, 72.0, 60.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 1104.602040835789012, 544.0, 72.0, 60.0 ],
-					"text" : "5"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"args" : [ 1 ],
+					"args" : [ 5 ],
 					"bgmode" : 2,
 					"border" : 1,
 					"clickthrough" : 1,
@@ -209,9 +177,9 @@
 					"maxclass" : "bpatcher",
 					"name" : "Chunk.maxpat",
 					"numinlets" : 2,
-					"numoutlets" : 3,
+					"numoutlets" : 2,
 					"offset" : [ -184.999999642372131, -340.66666567325592 ],
-					"outlettype" : [ "signal", "signal", "" ],
+					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 1153.654769420623779, 720.99999737739563, 248.5, 372.666670680046082 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 1104.602040835789239, 612.0, 256.75, 359.333336472511292 ],
@@ -222,21 +190,7 @@
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 48.0,
-					"id" : "obj-97",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 892.178569376468658, 660.71428656578064, 72.0, 60.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 847.826530626841759, 544.0, 72.0, 60.0 ],
-					"text" : "4"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"args" : [ 1 ],
+					"args" : [ 4 ],
 					"bgmode" : 2,
 					"border" : 1,
 					"clickthrough" : 1,
@@ -248,9 +202,9 @@
 					"maxclass" : "bpatcher",
 					"name" : "Chunk.maxpat",
 					"numinlets" : 2,
-					"numoutlets" : 3,
+					"numoutlets" : 2,
 					"offset" : [ -192.99999988079071, -340.66666567325592 ],
-					"outlettype" : [ "signal", "signal", "" ],
+					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 885.833338797092438, 720.99999737739563, 248.5, 372.666670680046082 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 847.826530626841986, 612.0, 256.75, 359.333336472511292 ],
@@ -261,21 +215,7 @@
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 48.0,
-					"id" : "obj-95",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 617.470238387584686, 618.750001609325409, 72.0, 60.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 591.051020417894506, 544.0, 72.0, 60.0 ],
-					"text" : "3"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"args" : [ 1 ],
+					"args" : [ 3 ],
 					"bgmode" : 2,
 					"border" : 1,
 					"clickthrough" : 1,
@@ -287,9 +227,9 @@
 					"maxclass" : "bpatcher",
 					"name" : "Chunk.maxpat",
 					"numinlets" : 2,
-					"numoutlets" : 3,
+					"numoutlets" : 2,
 					"offset" : [ -198.333333373069763, -343.333332419395447 ],
-					"outlettype" : [ "signal", "signal", "" ],
+					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 608.458341062068939, 720.99999737739563, 248.5, 372.666670680046082 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 591.05102041789462, 612.0, 256.75, 359.333336472511292 ],
@@ -300,21 +240,7 @@
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 48.0,
-					"id" : "obj-93",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 337.571428894996643, 561.499998807907104, 72.0, 60.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 334.275510208947253, 544.0, 72.0, 60.0 ],
-					"text" : "2"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"args" : [ 1 ],
+					"args" : [ 2 ],
 					"bgmode" : 2,
 					"border" : 1,
 					"clickthrough" : 1,
@@ -326,9 +252,9 @@
 					"maxclass" : "bpatcher",
 					"name" : "Chunk.maxpat",
 					"numinlets" : 2,
-					"numoutlets" : 3,
+					"numoutlets" : 2,
 					"offset" : [ -191.666666507720947, -343.333332419395447 ],
-					"outlettype" : [ "signal", "signal", "" ],
+					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 331.226198315620422, 720.99999737739563, 248.5, 372.666670680046082 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 334.27551020894731, 612.0, 256.749999999999943, 359.333336472511292 ],
@@ -363,20 +289,6 @@
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 48.0,
-					"id" : "obj-87",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 56.785723149776459, 561.499998807907104, 72.0, 60.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 77.5, 544.0, 72.0, 60.0 ],
-					"text" : "1"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"basictuning" : 440,
 					"data" : 					{
 						"clips" : [ 							{
@@ -404,7 +316,7 @@
 					"originaltempo" : 120.0,
 					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 89.797621190547943, 371.0, 150.0, 30.0 ],
+					"patching_rect" : [ 56.797621190547943, 495.0, 150.0, 30.0 ],
 					"pitchcorrection" : 0,
 					"presentation" : 1,
 					"presentation_rect" : [ 86.5, 319.0, 150.0, 30.0 ],
@@ -1000,9 +912,9 @@
 					"maxclass" : "bpatcher",
 					"name" : "Chunk.maxpat",
 					"numinlets" : 2,
-					"numoutlets" : 3,
+					"numoutlets" : 2,
 					"offset" : [ -192.99999988079071, -343.333332419395447 ],
-					"outlettype" : [ "signal", "signal", "" ],
+					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 56.785723149776459, 720.99999737739563, 248.5, 372.666670680046082 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 56.785723149776459, 720.99999737739563, 248.5, 372.666670680046082 ],
@@ -1351,7 +1263,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-82", 0 ],
-					"order" : 7,
+					"order" : 8,
 					"source" : [ "obj-66", 0 ]
 				}
 
@@ -1367,7 +1279,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-94", 0 ],
-					"order" : 8,
+					"order" : 7,
 					"source" : [ "obj-66", 0 ]
 				}
 
@@ -1406,8 +1318,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"order" : 0,
+					"source" : [ "obj-69", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-55", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-69", 0 ]
 				}
 
@@ -1415,7 +1335,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-57", 0 ],
-					"order" : 0,
+					"order" : 1,
 					"source" : [ "obj-69", 0 ]
 				}
 
@@ -6095,7 +6015,7 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "Chunk.maxpat",
-				"bootpath" : "~/Documents/Hackathon",
+				"bootpath" : "~/Documents/Hackathon/ChunkFX",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -6139,27 +6059,27 @@
 , 			{
 				"name" : "freeverb.gendsp",
 				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/gen",
-				"patcherrelativepath" : "../../Library/Application Support/Cycling '74/Max 8/Examples/gen",
+				"patcherrelativepath" : "../../../Library/Application Support/Cycling '74/Max 8/Examples/gen",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "freeverb_allpass.gendsp",
 				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/gen",
-				"patcherrelativepath" : "../../Library/Application Support/Cycling '74/Max 8/Examples/gen",
+				"patcherrelativepath" : "../../../Library/Application Support/Cycling '74/Max 8/Examples/gen",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "freeverb_comb.gendsp",
 				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/gen",
-				"patcherrelativepath" : "../../Library/Application Support/Cycling '74/Max 8/Examples/gen",
+				"patcherrelativepath" : "../../../Library/Application Support/Cycling '74/Max 8/Examples/gen",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fxSlot.maxpat",
-				"bootpath" : "~/Documents/Hackathon",
+				"bootpath" : "~/Documents/Hackathon/ChunkFX",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
