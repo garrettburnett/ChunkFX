@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 315.0, 100.0, 1044.0, 781.0 ],
+		"rect" : [ 243.0, 100.0, 1044.0, 781.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,53 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-4",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 167.75, 292.0, 40.0, 22.0 ],
+					"text" : "*~ 0.5"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-3",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 167.75, 261.0, 29.5, 22.0 ],
+					"text" : "+~"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"extract" : 1,
+					"id" : "obj-2",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "bp.Reverb 2.maxpat",
+					"numinlets" : 5,
+					"numoutlets" : 2,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "signal", "signal" ],
+					"patching_rect" : [ 163.0, 323.0, 271.0, 114.0 ],
+					"varname" : "bp.Reverb 2",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-6",
 					"linecount" : 16,
@@ -204,29 +251,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bgmode" : 0,
-					"border" : 0,
-					"clickthrough" : 0,
-					"enablehscroll" : 0,
-					"enablevscroll" : 0,
-					"extract" : 1,
-					"id" : "obj-46",
-					"lockeddragscroll" : 0,
-					"lockedsize" : 0,
-					"maxclass" : "bpatcher",
-					"name" : "bp.Freeverb.maxpat",
-					"numinlets" : 2,
-					"numoutlets" : 2,
-					"offset" : [ 0.0, 0.0 ],
-					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 227.0, 323.0, 185.029999000000004, 122.0 ],
-					"varname" : "bp.Freeverb",
-					"viewvisibility" : 1
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontsize" : 20.0,
 					"id" : "obj-18",
 					"maxclass" : "live.menu",
@@ -339,31 +363,56 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-55", 2 ],
-					"midpoints" : [ 236.5, 593.5, 400.100000000000023, 593.5 ],
-					"source" : [ "obj-46", 0 ]
+					"midpoints" : [ 172.5, 589.5, 400.100000000000023, 589.5 ],
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-57", 2 ],
-					"midpoints" : [ 402.529998999999975, 593.5, 489.600000000000023, 593.5 ],
-					"source" : [ "obj-46", 1 ]
+					"midpoints" : [ 424.5, 589.5, 489.600000000000023, 589.5 ],
+					"source" : [ "obj-2", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-46", 1 ],
-					"order" : 3,
-					"source" : [ "obj-47", 1 ]
+					"destination" : [ "obj-4", 0 ],
+					"source" : [ "obj-3", 0 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-46", 0 ],
-					"order" : 4,
+					"destination" : [ "obj-2", 4 ],
+					"order" : 0,
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"order" : 1,
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 1 ],
+					"midpoints" : [ 82.5, 297.0, 135.125, 297.0, 135.125, 289.0, 187.75, 289.0 ],
+					"order" : 1,
+					"source" : [ "obj-47", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-3", 0 ],
+					"midpoints" : [ 82.5, 297.0, 129.875, 297.0, 129.875, 291.0, 177.25, 291.0 ],
+					"order" : 2,
 					"source" : [ "obj-47", 0 ]
 				}
 
@@ -405,7 +454,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-58", 0 ],
-					"order" : 1,
+					"order" : 5,
 					"source" : [ "obj-47", 0 ]
 				}
 
@@ -421,7 +470,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-60", 0 ],
-					"order" : 3,
+					"order" : 4,
 					"source" : [ "obj-47", 0 ]
 				}
 
@@ -429,7 +478,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-72", 0 ],
-					"order" : 5,
+					"order" : 3,
 					"source" : [ "obj-47", 1 ]
 				}
 
@@ -437,7 +486,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-72", 0 ],
-					"order" : 2,
+					"order" : 3,
 					"source" : [ "obj-47", 0 ]
 				}
 
@@ -530,11 +579,12 @@
  ],
 		"parameters" : 		{
 			"obj-18" : [ "live.menu", "live.menu", 0 ],
-			"obj-46::obj-101" : [ "Dry", "Dry", 0 ],
-			"obj-46::obj-26" : [ "bypass[3]", "bypass", 0 ],
-			"obj-46::obj-31" : [ "Feedback1", "FB1", 0 ],
-			"obj-46::obj-32" : [ "Feedback2", "FB2", 0 ],
-			"obj-46::obj-33" : [ "Damp[1]", "Damp", 0 ],
+			"obj-2::obj-1" : [ "Size", "Size", 0 ],
+			"obj-2::obj-20" : [ "Diffusion", "Diffusion", 0 ],
+			"obj-2::obj-25" : [ "Damping", "Damping", 0 ],
+			"obj-2::obj-26" : [ "Decay", "Decay", 0 ],
+			"obj-2::obj-50" : [ "bypass", "bypass", 0 ],
+			"obj-2::obj-55" : [ "Mix", "Mix", 0 ],
 			"obj-72::obj-20" : [ "Freq", "Freq", 0 ],
 			"obj-72::obj-22" : [ "TimeMode", "TimeMode", 1 ],
 			"obj-72::obj-23" : [ "Offset", "Offset", 0 ],
@@ -557,8 +607,8 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "bp.Freeverb.maxpat",
-				"bootpath" : "C74:/packages/BEAP/clippings/BEAP/Effects",
+				"name" : "M4L.cross1~.maxpat",
+				"bootpath" : "C74:/patchers/m4l/Tools resources",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -569,24 +619,9 @@
 				"implicit" : 1
 			}
 , 			{
-				"name" : "freeverb.gendsp",
-				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/gen",
-				"patcherrelativepath" : "../../../Library/Application Support/Cycling '74/Max 8/Examples/gen",
-				"type" : "gDSP",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "freeverb_allpass.gendsp",
-				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/gen",
-				"patcherrelativepath" : "../../../Library/Application Support/Cycling '74/Max 8/Examples/gen",
-				"type" : "gDSP",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "freeverb_comb.gendsp",
-				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/gen",
-				"patcherrelativepath" : "../../../Library/Application Support/Cycling '74/Max 8/Examples/gen",
-				"type" : "gDSP",
+				"name" : "bp.Reverb 2.maxpat",
+				"bootpath" : "C74:/packages/BEAP/clippings/BEAP/Effects",
+				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
@@ -600,6 +635,13 @@
 				"name" : "spaceyChorus.maxpat",
 				"bootpath" : "~/Documents/GitHub/ChunkFX/fxModules",
 				"patcherrelativepath" : "./fxModules",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "yafr2.maxpat",
+				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/effects/reverb/lib",
+				"patcherrelativepath" : "../../../Library/Application Support/Cycling '74/Max 8/Examples/effects/reverb/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
