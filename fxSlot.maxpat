@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 100.0, 1044.0, 781.0 ],
+		"rect" : [ 315.0, 100.0, 1044.0, 781.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -80,7 +80,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 991.0, 293.5, 150.0, 20.0 ],
+					"patching_rect" : [ 1380.0, 294.0, 150.0, 20.0 ],
 					"text" : "NOT STEREO :("
 				}
 
@@ -102,7 +102,7 @@
 					"numoutlets" : 1,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 962.0, 323.0, 304.0, 116.0 ],
+					"patching_rect" : [ 1351.0, 323.0, 304.0, 116.0 ],
 					"varname" : "bp.LPF",
 					"viewvisibility" : 1
 				}
@@ -137,7 +137,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 668.0, 323.0, 251.0, 163.5 ],
+					"patching_rect" : [ 1057.0, 323.0, 251.0, 163.5 ],
 					"varname" : "bp.Sync Delay",
 					"viewvisibility" : 1
 				}
@@ -155,12 +155,12 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "bp.Flanger.maxpat",
-					"numinlets" : 1,
+					"name" : "spaceyChorus.maxpat",
+					"numinlets" : 2,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 442.0, 323.0, 190.0, 116.0 ],
+					"patching_rect" : [ 442.0, 323.0, 569.0, 168.0 ],
 					"varname" : "bp.Flanger",
 					"viewvisibility" : 1
 				}
@@ -239,7 +239,7 @@
 					"presentation_rect" : [ 50.0, 401.0, 100.0, 27.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "BYPASS", "REVERB", "FLANGER", "DELAY", "LADDER" ],
+							"parameter_enum" : [ "BYPASS", "REVERB", "CHORUS", "DELAY", "LADDER" ],
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_longname" : "live.menu",
@@ -355,7 +355,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-46", 1 ],
-					"order" : 2,
+					"order" : 3,
 					"source" : [ "obj-47", 1 ]
 				}
 
@@ -381,6 +381,14 @@
 				"patchline" : 				{
 					"destination" : [ "obj-57", 1 ],
 					"midpoints" : [ 137.5, 514.5, 477.800000000000011, 514.5 ],
+					"order" : 1,
+					"source" : [ "obj-47", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-58", 1 ],
 					"order" : 0,
 					"source" : [ "obj-47", 1 ]
 				}
@@ -397,7 +405,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-58", 0 ],
-					"order" : 3,
+					"order" : 1,
 					"source" : [ "obj-47", 0 ]
 				}
 
@@ -405,7 +413,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-60", 1 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-47", 1 ]
 				}
 
@@ -413,7 +421,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-60", 0 ],
-					"order" : 1,
+					"order" : 3,
 					"source" : [ "obj-47", 0 ]
 				}
 
@@ -421,7 +429,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-72", 0 ],
-					"order" : 3,
+					"order" : 5,
 					"source" : [ "obj-47", 1 ]
 				}
 
@@ -459,7 +467,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-57", 3 ],
-					"midpoints" : [ 622.5, 590.5, 501.399999999999977, 590.5 ],
+					"midpoints" : [ 1001.5, 590.5, 501.399999999999977, 590.5 ],
 					"source" : [ "obj-58", 1 ]
 				}
 
@@ -467,7 +475,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-55", 4 ],
-					"midpoints" : [ 677.5, 590.5, 423.699999999999989, 590.5 ],
+					"midpoints" : [ 1066.5, 590.5, 423.699999999999989, 590.5 ],
 					"source" : [ "obj-60", 0 ]
 				}
 
@@ -475,7 +483,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-57", 4 ],
-					"midpoints" : [ 909.5, 590.5, 513.200000000000045, 590.5 ],
+					"midpoints" : [ 1298.5, 590.5, 513.200000000000045, 590.5 ],
 					"source" : [ "obj-60", 1 ]
 				}
 
@@ -490,7 +498,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-55", 5 ],
-					"midpoints" : [ 971.5, 590.5, 435.5, 590.5 ],
+					"midpoints" : [ 1360.5, 590.5, 435.5, 590.5 ],
 					"order" : 1,
 					"source" : [ "obj-72", 0 ]
 				}
@@ -499,7 +507,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-57", 5 ],
-					"midpoints" : [ 971.5, 590.5, 525.0, 590.5 ],
+					"midpoints" : [ 1360.5, 590.5, 525.0, 590.5 ],
 					"order" : 0,
 					"source" : [ "obj-72", 0 ]
 				}
@@ -527,11 +535,6 @@
 			"obj-46::obj-31" : [ "Feedback1", "FB1", 0 ],
 			"obj-46::obj-32" : [ "Feedback2", "FB2", 0 ],
 			"obj-46::obj-33" : [ "Damp[1]", "Damp", 0 ],
-			"obj-58::obj-1" : [ "Width", "Width", 0 ],
-			"obj-58::obj-2" : [ "Rate", "Rate", 0 ],
-			"obj-58::obj-23" : [ "bypass", "bypass", 0 ],
-			"obj-58::obj-28" : [ "Center", "Center", 0 ],
-			"obj-58::obj-3" : [ "Regen", "Regen", 0 ],
 			"obj-72::obj-20" : [ "Freq", "Freq", 0 ],
 			"obj-72::obj-22" : [ "TimeMode", "TimeMode", 1 ],
 			"obj-72::obj-23" : [ "Offset", "Offset", 0 ],
@@ -554,12 +557,6 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "bp.Flanger.maxpat",
-				"bootpath" : "C74:/packages/BEAP/clippings/BEAP/Effects",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "bp.Freeverb.maxpat",
 				"bootpath" : "C74:/packages/BEAP/clippings/BEAP/Effects",
 				"type" : "JSON",
@@ -594,6 +591,13 @@
 			}
 , 			{
 				"name" : "simpleDelay.maxpat",
+				"bootpath" : "~/Documents/GitHub/ChunkFX/fxModules",
+				"patcherrelativepath" : "./fxModules",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "spaceyChorus.maxpat",
 				"bootpath" : "~/Documents/GitHub/ChunkFX/fxModules",
 				"patcherrelativepath" : "./fxModules",
 				"type" : "JSON",
