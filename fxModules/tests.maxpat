@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 63.0, 127.0, 1032.0, 682.0 ],
+		"rect" : [ 63.0, 127.0, 773.0, 739.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -40,11 +40,32 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-30",
+					"lockeddragscroll" : 0,
+					"lockedsize" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "bitcrusher.maxpat",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "signal", "signal" ],
+					"patching_rect" : [ 360.0, 381.0, 355.0, 147.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-185",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 324.0, 496.0, 150.0, 20.0 ],
+					"patching_rect" : [ 162.0, 456.0, 150.0, 20.0 ],
 					"text" : "this is buggy"
 				}
 
@@ -1440,7 +1461,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 204.0, 494.0, 111.0, 22.0 ],
+					"patching_rect" : [ 156.0, 432.0, 111.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -1598,7 +1619,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-126", 0 ],
-					"order" : 2,
+					"order" : 4,
 					"source" : [ "obj-27", 0 ]
 				}
 
@@ -1614,7 +1635,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-176", 0 ],
-					"order" : 1,
+					"order" : 3,
 					"source" : [ "obj-27", 0 ]
 				}
 
@@ -1629,7 +1650,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-41", 1 ],
+					"destination" : [ "obj-30", 1 ],
 					"order" : 2,
 					"source" : [ "obj-27", 1 ]
 				}
@@ -1637,8 +1658,24 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-41", 0 ],
+					"destination" : [ "obj-30", 0 ],
+					"order" : 1,
+					"source" : [ "obj-27", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-41", 1 ],
 					"order" : 3,
+					"source" : [ "obj-27", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-41", 0 ],
+					"order" : 2,
 					"source" : [ "obj-27", 0 ]
 				}
 
@@ -1646,14 +1683,14 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-21", 1 ],
-					"source" : [ "obj-41", 1 ]
+					"source" : [ "obj-30", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-21", 0 ],
-					"source" : [ "obj-41", 0 ]
+					"source" : [ "obj-30", 0 ]
 				}
 
 			}
@@ -1674,6 +1711,13 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "biquadFilter.maxpat",
+				"bootpath" : "~/Documents/GitHub/ChunkFX/fxModules",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "bitcrusher.maxpat",
 				"bootpath" : "~/Documents/GitHub/ChunkFX/fxModules",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
