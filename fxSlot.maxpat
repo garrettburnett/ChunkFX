@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 509.0, -1140.0, 1298.0, 877.0 ],
+		"rect" : [ -324.0, -1303.0, 1545.0, 979.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-6",
+					"linecount" : 16,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 957.0, 638.0, 150.0, 221.0 ],
+					"text" : "To update FX:\n- First update the dropdown to be however you want it to be, how many fx. Update Range/Enum\n\n- Update each selector (L and R) to the total number of routes provided by the live dropdown\n\n-Add each FX module in series and map accordingly to the right selector"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-5",
 					"maxclass" : "number",
@@ -590,21 +602,21 @@
 , 			{
 				"name" : "freeverb.gendsp",
 				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/gen",
-				"patcherrelativepath" : "../../Library/Application Support/Cycling '74/Max 8/Examples/gen",
+				"patcherrelativepath" : "../../../Library/Application Support/Cycling '74/Max 8/Examples/gen",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "freeverb_allpass.gendsp",
 				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/gen",
-				"patcherrelativepath" : "../../Library/Application Support/Cycling '74/Max 8/Examples/gen",
+				"patcherrelativepath" : "../../../Library/Application Support/Cycling '74/Max 8/Examples/gen",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "freeverb_comb.gendsp",
 				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/gen",
-				"patcherrelativepath" : "../../Library/Application Support/Cycling '74/Max 8/Examples/gen",
+				"patcherrelativepath" : "../../../Library/Application Support/Cycling '74/Max 8/Examples/gen",
 				"type" : "gDSP",
 				"implicit" : 1
 			}
