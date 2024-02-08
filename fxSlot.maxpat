@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 5,
-			"revision" : 7,
+			"minor" : 6,
+			"revision" : 0,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ -324.0, -1303.0, 1545.0, 979.0 ],
+		"rect" : [ 34.0, 100.0, 1044.0, 781.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -45,7 +45,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 957.0, 638.0, 150.0, 221.0 ],
+					"patching_rect" : [ 957.0, 638.0, 151.0, 221.0 ],
 					"text" : "To update FX:\n- First update the dropdown to be however you want it to be, how many fx. Update Range/Enum\n\n- Update each selector (L and R) to the total number of routes provided by the live dropdown\n\n-Add each FX module in series and map accordingly to the right selector"
 				}
 
@@ -132,12 +132,12 @@
 					"lockeddragscroll" : 0,
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
-					"name" : "bp.Sync Delay.maxpat",
+					"name" : "simpleDelay.maxpat",
 					"numinlets" : 2,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 666.0, 323.0, 265.0, 116.0 ],
+					"patching_rect" : [ 668.0, 323.0, 251.0, 163.5 ],
 					"varname" : "bp.Sync Delay",
 					"viewvisibility" : 1
 				}
@@ -413,7 +413,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-60", 0 ],
-					"order" : 2,
+					"order" : 1,
 					"source" : [ "obj-47", 0 ]
 				}
 
@@ -429,7 +429,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-72", 0 ],
-					"order" : 1,
+					"order" : 2,
 					"source" : [ "obj-47", 0 ]
 				}
 
@@ -467,7 +467,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-55", 4 ],
-					"midpoints" : [ 675.5, 590.5, 423.699999999999989, 590.5 ],
+					"midpoints" : [ 677.5, 590.5, 423.699999999999989, 590.5 ],
 					"source" : [ "obj-60", 0 ]
 				}
 
@@ -475,7 +475,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-57", 4 ],
-					"midpoints" : [ 921.5, 590.5, 513.200000000000045, 590.5 ],
+					"midpoints" : [ 909.5, 590.5, 513.200000000000045, 590.5 ],
 					"source" : [ "obj-60", 1 ]
 				}
 
@@ -532,15 +532,6 @@
 			"obj-58::obj-23" : [ "bypass", "bypass", 0 ],
 			"obj-58::obj-28" : [ "Center", "Center", 0 ],
 			"obj-58::obj-3" : [ "Regen", "Regen", 0 ],
-			"obj-60::obj-118" : [ "Mix", "Mix", 0 ],
-			"obj-60::obj-27" : [ "Feedback", "Feedback", 0 ],
-			"obj-60::obj-49" : [ "HPF", "HPF", 0 ],
-			"obj-60::obj-50" : [ "LPF", "LPF", 0 ],
-			"obj-60::obj-7" : [ "bypass[4]", "bypass", 0 ],
-			"obj-60::obj-708" : [ "duration.r", "duration.r", 0 ],
-			"obj-60::obj-9" : [ "delay_right", "delay_right", 0 ],
-			"obj-60::obj-957" : [ "duration.l", "duration.l", 0 ],
-			"obj-60::obj-96" : [ "delay_left", "delay_left", 0 ],
 			"obj-72::obj-20" : [ "Freq", "Freq", 0 ],
 			"obj-72::obj-22" : [ "TimeMode", "TimeMode", 1 ],
 			"obj-72::obj-23" : [ "Offset", "Offset", 0 ],
@@ -559,23 +550,10 @@
 
 			}
 ,
-			"parameter_overrides" : 			{
-				"obj-60::obj-7" : 				{
-					"parameter_longname" : "bypass[4]"
-				}
-
-			}
-,
 			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "M4L.bal2~.maxpat",
-				"bootpath" : "C74:/patchers/m4l/Tools resources",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "bp.Flanger.maxpat",
 				"bootpath" : "C74:/packages/BEAP/clippings/BEAP/Effects",
 				"type" : "JSON",
@@ -590,12 +568,6 @@
 , 			{
 				"name" : "bp.LPF.maxpat",
 				"bootpath" : "C74:/packages/BEAP/clippings/BEAP/Filter",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "bp.Sync Delay.maxpat",
-				"bootpath" : "C74:/packages/BEAP/clippings/BEAP/Effects",
 				"type" : "JSON",
 				"implicit" : 1
 			}
@@ -618,6 +590,13 @@
 				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/gen",
 				"patcherrelativepath" : "../../../Library/Application Support/Cycling '74/Max 8/Examples/gen",
 				"type" : "gDSP",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "simpleDelay.maxpat",
+				"bootpath" : "~/Documents/GitHub/ChunkFX/fxModules",
+				"patcherrelativepath" : "./fxModules",
+				"type" : "JSON",
 				"implicit" : 1
 			}
  ],
