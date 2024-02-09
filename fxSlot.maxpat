@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 117.0, 100.0, 955.0, 781.0 ],
+		"rect" : [ 144.0, -967.0, 955.0, 781.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,53 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-23",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 0,
+					"patching_rect" : [ 577.0, 141.0, 115.0, 22.0 ],
+					"text" : "print chorus params"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 7,
+					"outlettype" : [ "float", "float", "float", "float", "float", "float", "float" ],
+					"patching_rect" : [ 454.5, 177.0, 94.0, 22.0 ],
+					"text" : "unpack f f f f f f f"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-20",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 442.0, 38.5, 99.0, 20.0 ],
+					"text" : "chorus params"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-8",
+					"index" : 0,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 409.0, 40.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-9",
 					"linecount" : 2,
@@ -225,7 +272,7 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "spaceyChorus.maxpat",
-					"numinlets" : 2,
+					"numinlets" : 9,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal" ],
@@ -400,6 +447,55 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-58", 8 ],
+					"source" : [ "obj-22", 6 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-58", 7 ],
+					"source" : [ "obj-22", 5 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-58", 6 ],
+					"source" : [ "obj-22", 4 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-58", 5 ],
+					"source" : [ "obj-22", 3 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-58", 4 ],
+					"source" : [ "obj-22", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-58", 3 ],
+					"source" : [ "obj-22", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-58", 2 ],
+					"source" : [ "obj-22", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-3", 0 ]
 				}
@@ -452,14 +548,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-57", 1 ],
 					"midpoints" : [ 137.5, 514.5, 476.5, 514.5 ],
-					"order" : 2,
-					"source" : [ "obj-47", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-58", 1 ],
 					"order" : 1,
 					"source" : [ "obj-47", 1 ]
 				}
@@ -467,8 +555,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-58", 0 ],
-					"order" : 6,
+					"destination" : [ "obj-58", 1 ],
+					"order" : 4,
 					"source" : [ "obj-47", 1 ]
 				}
 
@@ -476,7 +564,15 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-58", 0 ],
-					"order" : 6,
+					"order" : 5,
+					"source" : [ "obj-47", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-58", 0 ],
+					"order" : 3,
 					"source" : [ "obj-47", 0 ]
 				}
 
@@ -485,7 +581,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-60", 1 ],
 					"midpoints" : [ 137.5, 304.5, 1273.5, 304.5 ],
-					"order" : 4,
+					"order" : 3,
 					"source" : [ "obj-47", 1 ]
 				}
 
@@ -493,7 +589,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-60", 0 ],
-					"order" : 5,
+					"order" : 6,
 					"source" : [ "obj-47", 0 ]
 				}
 
@@ -502,7 +598,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-7", 1 ],
 					"midpoints" : [ 137.5, 321.0, 2238.5, 321.0 ],
-					"order" : 3,
+					"order" : 2,
 					"source" : [ "obj-47", 1 ]
 				}
 
@@ -511,7 +607,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
 					"midpoints" : [ 82.5, 321.0, 1906.5, 321.0 ],
-					"order" : 3,
+					"order" : 5,
 					"source" : [ "obj-47", 0 ]
 				}
 
@@ -529,7 +625,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-72", 0 ],
 					"midpoints" : [ 137.5, 307.0, 1309.5, 307.0 ],
-					"order" : 5,
+					"order" : 6,
 					"source" : [ "obj-47", 1 ]
 				}
 
@@ -636,6 +732,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-22", 0 ],
+					"order" : 1,
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-23", 0 ],
+					"order" : 0,
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-67", 1 ],
 					"source" : [ "obj-80", 0 ]
 				}
@@ -699,13 +811,6 @@
 				"name" : "spaceyChorus.maxpat",
 				"bootpath" : "~/Documents/GitHub/ChunkFX/fxModules",
 				"patcherrelativepath" : "./fxModules",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "yafr2.maxpat",
-				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/effects/reverb/lib",
-				"patcherrelativepath" : "../../../Library/Application Support/Cycling '74/Max 8/Examples/effects/reverb/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
