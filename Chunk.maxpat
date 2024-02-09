@@ -40,25 +40,49 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-32",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 534.0, 306.0, 89.0, 20.0 ],
+					"text" : "filter params"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "filter params",
+					"id" : "obj-34",
+					"index" : 0,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 499.0, 306.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-22",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 441.0, 306.0, 89.0, 20.0 ],
+					"patching_rect" : [ 398.0, 306.0, 89.0, 20.0 ],
 					"text" : "delay params"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "delay params",
 					"id" : "obj-29",
 					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 406.0, 306.0, 30.0, 30.0 ]
+					"patching_rect" : [ 363.0, 306.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -75,7 +99,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "",
+					"comment" : "chorus params",
 					"id" : "obj-8",
 					"index" : 0,
 					"maxclass" : "inlet",
@@ -374,7 +398,7 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "fxSlot.maxpat",
-					"numinlets" : 4,
+					"numinlets" : 5,
 					"numoutlets" : 2,
 					"offset" : [ -56.0, -458.0 ],
 					"outlettype" : [ "signal", "signal" ],
@@ -397,7 +421,7 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "fxSlot.maxpat",
-					"numinlets" : 4,
+					"numinlets" : 5,
 					"numoutlets" : 2,
 					"offset" : [ -56.0, -458.0 ],
 					"outlettype" : [ "signal", "signal" ],
@@ -420,7 +444,7 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "fxSlot.maxpat",
-					"numinlets" : 4,
+					"numinlets" : 5,
 					"numoutlets" : 2,
 					"offset" : [ -56.0, -458.0 ],
 					"outlettype" : [ "signal", "signal" ],
@@ -443,7 +467,7 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "fxSlot.maxpat",
-					"numinlets" : 4,
+					"numinlets" : 5,
 					"numoutlets" : 2,
 					"offset" : [ -56.0, -458.0 ],
 					"outlettype" : [ "signal", "signal" ],
@@ -659,14 +683,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-11", 3 ],
-					"order" : 2,
-					"source" : [ "obj-29", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-12", 3 ],
 					"order" : 1,
 					"source" : [ "obj-29", 0 ]
 				}
@@ -674,8 +690,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-12", 3 ],
+					"order" : 2,
+					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-14", 3 ],
-					"order" : 0,
+					"order" : 3,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -683,7 +707,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 3 ],
-					"order" : 3,
+					"order" : 0,
 					"source" : [ "obj-29", 0 ]
 				}
 
@@ -699,6 +723,38 @@
 				"patchline" : 				{
 					"destination" : [ "obj-23", 0 ],
 					"source" : [ "obj-31", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 4 ],
+					"order" : 2,
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 4 ],
+					"order" : 1,
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 4 ],
+					"order" : 0,
+					"source" : [ "obj-34", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 4 ],
+					"order" : 3,
+					"source" : [ "obj-34", 0 ]
 				}
 
 			}
