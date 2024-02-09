@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 321.0, -954.0, 1079.0, 786.0 ],
+		"rect" : [ 104.0, -905.0, 1079.0, 786.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,30 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 441.0, 306.0, 89.0, 20.0 ],
+					"text" : "delay params"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"comment" : "",
+					"id" : "obj-29",
+					"index" : 0,
+					"maxclass" : "inlet",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 406.0, 306.0, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-33",
 					"maxclass" : "comment",
@@ -350,7 +374,7 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "fxSlot.maxpat",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 2,
 					"offset" : [ -56.0, -458.0 ],
 					"outlettype" : [ "signal", "signal" ],
@@ -373,7 +397,7 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "fxSlot.maxpat",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 2,
 					"offset" : [ -56.0, -458.0 ],
 					"outlettype" : [ "signal", "signal" ],
@@ -396,7 +420,7 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "fxSlot.maxpat",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 2,
 					"offset" : [ -56.0, -458.0 ],
 					"outlettype" : [ "signal", "signal" ],
@@ -419,7 +443,7 @@
 					"lockedsize" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "fxSlot.maxpat",
-					"numinlets" : 3,
+					"numinlets" : 4,
 					"numoutlets" : 2,
 					"offset" : [ -56.0, -458.0 ],
 					"outlettype" : [ "signal", "signal" ],
@@ -629,6 +653,38 @@
 				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
 					"source" : [ "obj-28", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-11", 3 ],
+					"order" : 2,
+					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-12", 3 ],
+					"order" : 1,
+					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-14", 3 ],
+					"order" : 0,
+					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 3 ],
+					"order" : 3,
+					"source" : [ "obj-29", 0 ]
 				}
 
 			}
