@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 536.0, -872.0, 559.0, 781.0 ],
+		"rect" : [ 261.0, -877.0, 893.0, 781.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -490,7 +490,7 @@
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 426.5, 802.0, 30.0, 30.0 ]
+					"patching_rect" : [ 456.5, 802.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -760,14 +760,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-58", 0 ],
 					"order" : 6,
-					"source" : [ "obj-47", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-58", 0 ],
-					"order" : 6,
 					"source" : [ "obj-47", 0 ]
 				}
 
@@ -775,7 +767,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-60", 1 ],
-					"midpoints" : [ 137.5, 304.5, 1108.0, 304.5 ],
 					"order" : 4,
 					"source" : [ "obj-47", 1 ]
 				}
@@ -792,7 +783,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 1 ],
-					"midpoints" : [ 137.5, 321.0, 1972.900000000000091, 321.0 ],
 					"order" : 3,
 					"source" : [ "obj-47", 1 ]
 				}
@@ -801,7 +791,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
-					"midpoints" : [ 82.5, 321.0, 1906.5, 321.0 ],
 					"order" : 3,
 					"source" : [ "obj-47", 0 ]
 				}
@@ -810,17 +799,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-72", 1 ],
-					"midpoints" : [ 137.5, 307.0, 1422.900000000000091, 307.0 ],
 					"order" : 1,
-					"source" : [ "obj-47", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-72", 0 ],
-					"midpoints" : [ 137.5, 307.0, 1309.5, 307.0 ],
-					"order" : 5,
 					"source" : [ "obj-47", 1 ]
 				}
 
@@ -850,7 +829,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-55", 3 ],
-					"midpoints" : [ 451.5, 590.5, 408.0, 590.5 ],
+					"midpoints" : [ 451.5, 616.5, 408.0, 616.5 ],
 					"source" : [ "obj-58", 0 ]
 				}
 
@@ -858,7 +837,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-57", 3 ],
-					"midpoints" : [ 1001.5, 590.5, 497.5, 590.5 ],
+					"midpoints" : [ 1001.5, 616.5, 497.5, 616.5 ],
 					"source" : [ "obj-58", 1 ]
 				}
 
@@ -866,7 +845,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-55", 4 ],
-					"midpoints" : [ 1054.5, 590.5, 418.5, 590.5 ],
+					"midpoints" : [ 1054.5, 608.25, 418.5, 608.25 ],
 					"source" : [ "obj-60", 0 ]
 				}
 
@@ -874,7 +853,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-57", 4 ],
-					"midpoints" : [ 1268.5, 590.5, 508.0, 590.5 ],
+					"midpoints" : [ 1268.5, 608.25, 508.0, 608.25 ],
 					"source" : [ "obj-60", 1 ]
 				}
 
@@ -889,7 +868,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-55", 6 ],
-					"midpoints" : [ 1906.5, 609.5, 439.5, 609.5 ],
+					"midpoints" : [ 1906.5, 619.5, 439.5, 619.5 ],
 					"source" : [ "obj-7", 0 ]
 				}
 
@@ -897,7 +876,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-57", 6 ],
-					"midpoints" : [ 2238.5, 614.5, 529.0, 614.5 ],
+					"midpoints" : [ 2238.5, 619.5, 529.0, 619.5 ],
 					"source" : [ "obj-7", 1 ]
 				}
 
@@ -905,7 +884,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-55", 5 ],
-					"midpoints" : [ 1309.5, 590.5, 429.0, 590.5 ],
+					"midpoints" : [ 1309.5, 633.5, 429.0, 633.5 ],
 					"source" : [ "obj-72", 0 ]
 				}
 
@@ -913,7 +892,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-57", 5 ],
-					"midpoints" : [ 1876.5, 597.5, 518.5, 597.5 ],
+					"midpoints" : [ 1876.5, 633.5, 518.5, 633.5 ],
 					"source" : [ "obj-72", 1 ]
 				}
 
@@ -997,6 +976,13 @@
 				"name" : "spaceyChorus.maxpat",
 				"bootpath" : "~/Documents/GitHub/ChunkFX/fxModules",
 				"patcherrelativepath" : "./fxModules",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "yafr2.maxpat",
+				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/effects/reverb/lib",
+				"patcherrelativepath" : "../../../Library/Application Support/Cycling '74/Max 8/Examples/effects/reverb/lib",
 				"type" : "JSON",
 				"implicit" : 1
 			}
